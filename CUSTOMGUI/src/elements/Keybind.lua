@@ -136,12 +136,12 @@ function Element:New(Config)
 						Input.UserInputType == Enum.UserInputType.MouseButton1
 						and not table.find(FilteredBlacklist, "MouseLeftButton")
 					then
-						Key = "MouseLeftButton"
+						Key = "MouseLeft"
 					elseif
 						Input.UserInputType == Enum.UserInputType.MouseButton2
 						and not table.find(FilteredBlacklist, "MouseRightButton")
 					then
-						Key = "MouseRightButton"
+						Key = "MouseRight"
 					end
 
 					if EndedEvent then
